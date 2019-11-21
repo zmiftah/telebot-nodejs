@@ -43,7 +43,7 @@ app.use(
 );
 
 app.post("/start", function(req, res) {
-    const { message } = req.body;
+    const { message } = req.body.message;
     let reply = "Welcome to NodeJs Super Telebot";
     let cityText = message.text.toLowerCase();
     let cityCheck = cityText.indexOf('/');
